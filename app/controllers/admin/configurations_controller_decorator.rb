@@ -1,5 +1,5 @@
 module Admin
-  class ConfigurationsController.class_eval do
+  ConfigurationsController.class_eval do
     before_filter :add_flexi_rate_links, :only => :index
 
     def add_flexi_rate_links
