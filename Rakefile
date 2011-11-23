@@ -18,12 +18,7 @@ Gem::PackageTask.new(spec) do |p|
   p.gem_spec = spec
 end
 
-desc "Release to gemcutter"
-task :release => :package do
-  require 'rake/gemcutter'
-  Rake::Gemcutter::Tasks.new(spec).define
-  Rake::Task['gem.push'].invoke
-end
+Bundler::GemHelper.install_tasks
 
 desc "Generates a dummy app for testing"
 task :test_app do 
