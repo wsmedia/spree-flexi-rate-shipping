@@ -1,5 +1,5 @@
 class CreateFlexiShippingRates < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :flexi_shipping_rates do |t|
       t.references :shipping_category
       t.references :zone
@@ -10,8 +10,5 @@ class CreateFlexiShippingRates < ActiveRecord::Migration
       t.timestamps
     end
   end
-
-  def self.down
-    drop_table :flexi_shipping_rates
-  end
 end
+
