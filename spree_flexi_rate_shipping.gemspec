@@ -6,8 +6,8 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Chris Boertien"]
   gem.email         = ["chris.boertien@gmail.com"]
   gem.description   = %q(Provides flexible shipping rate configuration)
-  gem.summary       = %q(Provides flexible shipping rate configuration)
-  gem.homepage      = ""
+  gem.summary       = %q(Provides flexible shipping rate configuration.)
+  gem.homepage      = "http://github.com/BZLabs/spree-flexi-rate-shipping"
   gem.required_ruby_version = '>= 1.8.7'
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
@@ -19,5 +19,6 @@ Gem::Specification.new do |gem|
   gem.requirements << 'none'
   gem.add_dependency 'spree_core', '>= 0.70.1'
   gem.add_development_dependency 'rspec-rails'
+  gem.add_development_dependency 'sqlite3'
 end
 
