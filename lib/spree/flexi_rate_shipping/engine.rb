@@ -20,6 +20,10 @@ module Spree
         end
       end
 
+      initializer "spree.register.flexi_rate_shipping_calculator" do |app|
+        app.config.spree.calculators.shipping_methods << Calculator::FlexiShippingRate
+      end
+
       config.to_prepare &method(:activate).to_proc
     end
   end
