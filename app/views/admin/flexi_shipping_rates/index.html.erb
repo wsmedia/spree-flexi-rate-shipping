@@ -1,13 +1,13 @@
 <div class='toolbar'>
   <ul class='actions'>
     <li>
-      <%= button_link_to t("new_flexi_shipping_rate"), new_object_url, :icon => 'add'  %>
+      <%= button_link_to "New Flexi Shipping Rate", new_admin_flexi_shipping_rate_url, :icon => 'add'  %>
     </li>
   </ul>
   <br class='clear' />
 </div>
 
-<h1><%= FlexiShippingRate.human_name(:count => 2) %></h1>
+<h1>Flexi Shipping Rates</h1>
 
 <table class="index">
   <thead>
