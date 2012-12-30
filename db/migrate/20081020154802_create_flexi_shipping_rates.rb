@@ -1,6 +1,6 @@
 class CreateFlexiShippingRates < ActiveRecord::Migration
   def change
-    create_table :flexi_shipping_rates do |t|
+    create_table :spree_flexi_shipping_rates do |t|
       t.references :shipping_category
       t.references :zone
 	    t.decimal :first_item_price, :precision => 8, :scale => 2

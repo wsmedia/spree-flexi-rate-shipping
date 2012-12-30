@@ -1,8 +1,10 @@
-class FlexiShippingRate < ActiveRecord::Base
+class Spree::FlexiShippingRate < ActiveRecord::Base
   belongs_to :shipping_category
   belongs_to :zone
   
   validates_presence_of :first_item_price, :max_items, :shipping_category, :zone
   validates_uniqueness_of :shipping_category_id, :scope => :zone_id 
+
+  attr_accessible :shipping_category_id, :zone_id, :first_item_price, :additional_item_price, :max_items
 end
 

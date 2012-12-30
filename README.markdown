@@ -76,7 +76,7 @@ Quick Start for 0.70.x
 ===========
 1. Add to your Gemfile
 
-    `gem 'spree_flexi_rate_shipping', :git => 'git://github.com/spree-flexi-rate-shipping.git'`
+    `gem 'spree_flexi_rate_shipping', :git => 'git://github.com/wsmedia/spree-flexi-rate-shipping.git'`
 
 2. Copy and run the migrations
 
@@ -90,10 +90,12 @@ Quick Start for 0.70.x
 
 Work for 0.70 done by Chris Boertien of Bz Labs
 
+Updated for Spree 1.1.X Stable by Ryan Siddle
+
 Quick Start for 0.60.x
 ============
 1. Add extension to Gemfile
-	`gem "spree_flexi_rate_shipping", :require => "spree_flexi_rate_shipping", :git => 'git://github.com/GeeksOnCoffee/spree-flexi-rate-shipping.git', :branch => '0.60.0'`
+	`gem "spree_flexi_rate_shipping", :require => "spree_flexi_rate_shipping", :git => 'git://github.com/wsmedia/spree-flexi-rate-shipping.git', :branch => '0.60.0'`
 
 2. Get Gem
     bundle install

@@ -1,6 +1,6 @@
 <h1>Edit Flexi Shipping Rate</h1>
 
-<%= render 'shared/error_messages', :target => @flexi_shipping_rate %>
+<%= render 'spree/shared/error_messages', :target => @flexi_shipping_rate %>
 
 <%= form_for(:flexi_shipping_rate, :url => admin_flexi_shipping_rate_url(@flexi_shipping_rate), :html => { :method => :put }) do |f| %>
   <%= render :partial => "form", :locals => { :f => f } %>

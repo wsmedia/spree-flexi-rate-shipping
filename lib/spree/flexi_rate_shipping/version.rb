@@ -1,3 +1,3 @@
 module SpreeFlexiRateShipping
-  VERSION = "0.3.0.beta"
+  VERSION = "1.1.3.beta"
 end
