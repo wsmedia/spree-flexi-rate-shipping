@@ -19,8 +19,7 @@ class Spree::Calculator::FlexiShippingRate < Spree::Calculator
     rate_count = {}
       #binding.pry
       #return false if object.nil?
-    ceiling = 35
-    return 0 if object.class == Spree::Order && object.total > ceiling # Make the delivery free
+    return 0 if object.class == Spree::Order && object.total > 35 # Make the delivery free
     object.line_items.each do |li|
       li.quantity.times do
         sc = li.product.shipping_category
